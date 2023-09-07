@@ -1,11 +1,11 @@
-let score = "33abc";
+// let score = "33abc";
 
-console.log(typeof score);
-console.log(typeof score);
+// console.log(typeof score);
+// console.log(typeof score);
 
-let numberInValue = Number(score);
-console.log(typeof numberInValue);
-console.log(numberInValue);
+// let numberInValue = Number(score);
+// console.log(typeof numberInValue);
+// console.log(numberInValue);
 
 // => when convert varible into number
 // 33 => 33
@@ -26,3 +26,7 @@ console.log(numberInValue);
 // "" => false
 // "zahid" => true
 // undefined => false
+
+console.log(1+2+3);
+console.log("1" + 2+3);
+console.log(1+2+"3")

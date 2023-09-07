@@ -18,5 +18,29 @@
 /*
 * object: 
 * array:
+* Function
 */
 
+//================================================================ datatype-summary =================================================================//
+// const id = Symbol("123")
+// const anotherId = Symbol("123")
+// console.log(id === anotherId)
+
+//================================================================ Memory =================================================================//
+// let myname = "zahid"
+// let anotherName = myname
+
+// anotherName = "Sarang"
+
+// console.log(myname);
+// console.log(anotherName);
+
+// let userOne = {
+//     name: "zahid",
+//     age:20
+// }
+
+// let userTwo = userOne
+// userTwo.age = 21 
+// console.log(userOne)
+// console.log(userTwo);
