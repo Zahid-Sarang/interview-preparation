@@ -5,9 +5,8 @@
 // 	isPaid: false,
 // };
 Object.defineProperty(exports, "__esModule", { value: true });
-function createUser(_a) {
-    var string = _a.name, boolean = _a.isPaid;
+function createUser(user) {
+    return { name: "Zah", email: "zah@gmail", isActive: true };
 }
-// createUser({ name: "ZAhid", isPaid: false,email: "zahid@gmail.com}); it will give error on email
-var userData = { name: "ZAhid", isPaid: false, email: "zahid@gmail.com" };
-createUser(userData);
+var result = createUser({ name: "", email: "", isActive: false });
+console.log(result);
