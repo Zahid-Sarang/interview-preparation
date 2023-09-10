@@ -1,3 +1,9 @@
 "use strict";
-console.log("type Script");
-console.log("hello erver one");
+class User {
+    constructor(email, name) {
+        this.city = "khargahr";
+        this.email = email;
+        this.name = name;
+    }
+}
+const zahid = new User("zahid@gmail.com", "Zahid");
