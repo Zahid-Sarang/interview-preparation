@@ -51,3 +51,14 @@
 // }
 // Info();
 // console.log(`${name} has got ${TotalMarks()}`);
+
+var createCounter = function(n) {
+    return function() {
+       return console.log(++n)
+    };
+};
+
+const result = createCounter(10)
+result()
+result()
+result()
