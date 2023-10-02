@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+</head>
+
+<body style="background-color: #0E1630">
+    <div class="Card" id="Card">
+        <div class="img">
+            <img id="image" src="" alt="" width="200px" />
+            <p class="bio" id="bio">Click the to Call github Api</p>
+        </div>
+        <div class="followers">
+            <p>followers: <span id="follow"></span></p>
+        </div>
+        <button id="button">Click</button>
+
+    </div>
+
+</body>
+<script>
+    const requestUrl = 'https://api.github.com/users/Zahid-Sarang'
+    const image = document.querySelector('#image')
+    const bio = document.querySelector('#bio')
+    const follow = document.querySelector('#follow')
+    const button = document.getElementById('button');
+    button.addEventListener('click', () => {
+        const xhr = new XMLHttpRequest();
+        xhr.open('GET', requestUrl)
+        xhr.onreadystatechange = function () {
+            console.log(xhr.readyState)
+            if (xhr.readyState === 4) {
+                const data = JSON.parse(this.responseText)
+                console.log(data)
+                image.src = data.avatar_url
+                bio.innerHTML = data.bio
+                follow.innerHTML = data.followers
+            }
+        }
+        xhr.send();
+
+    })
+
+
+</script>
+
+</html>
