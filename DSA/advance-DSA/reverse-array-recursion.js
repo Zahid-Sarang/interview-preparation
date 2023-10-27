@@ -1,3 +1,4 @@
+// example : 1
 // let data = [3, 4, 2, 54, 12];
 // let temp;
 
@@ -13,7 +14,26 @@
 
 // customeReverse(data, 0, data.length - 1);
 
-let item = [1, 2, 3, 4, 5];
-const result = item.reverse();
+// example 2
+let data = [89, 32, 43, 1, 3];
+let size = data.length - 1;
+let temp = [];
 
-console.log("using rever function", result);
+function reverse(data, size) {
+	if (size >= 0) {
+		temp.push(data[size]);
+		size = size - 1;
+		reverse(data, size);
+	} else {
+		return;
+	}
+}
+
+reverse(data, size);
+console.log(temp);
+
+// example 3
+// let item = [1, 2, 3, 4, 5];
+// const result = item.reverse();
+
+// console.log("using rever function", result);
