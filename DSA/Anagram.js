@@ -17,7 +17,7 @@ function AnagramString(string1, string2) {
   let counter = {};
   for (let letters of string1) {
     counter[letters] = (counter[letters] || 0) + 1;
-    console.log(counter[letters]);
+    console.log(counter);
   }
   for (let items of string2) {
     if (!counter[items]) {
